@@ -1,6 +1,6 @@
-import { RepoList } from "./components/RepoList";
+import { RepositoryList } from "./components/RepositoryList";
 import "./styles/globals.scss";
 
 export function App() {
-  return <RepoList />;
+  return <RepositoryList />;
 }
