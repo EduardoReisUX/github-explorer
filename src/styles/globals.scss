@@ -6,21 +6,25 @@
 
 body {
   font: 1rem Arial, Helvetica, sans-serif;
-  //background: #333;
-  color: #121214;
 
-  /* display: flex;
+  background: hsl(210, 90%, 90%);
+  color: hsl(240, 5%, 7%);
+
+  display: flex;
   flex-direction: column;
-  align-items: center; */
+  align-items: center;
 
   height: 100vh;
 }
-/*
-.repository-list {
-  margin: 2rem 1rem;
+
+::-webkit-scrollbar {
+  width: 0.5rem;
 }
 
-li {
-  list-style: none;
-  margin-top: 1rem;
-} */
+::-webkit-scrollbar-thumb {
+  background: #888;
+
+  &:hover {
+    background: #555;
+  }
+}
