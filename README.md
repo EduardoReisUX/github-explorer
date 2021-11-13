@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Projeto feito para consolidar a base do ReactJS, Babel, Webpack e conceitos fundamentais como imutabilidade e One-Way Data Binding.
+Projeto feito para consolidar as bases do ReactJS, Babel, Webpack e conceitos fundamentais como imutabilidade e One-Way Data Binding.
 
 🚀
 
@@ -13,3 +13,7 @@ Projeto feito para consolidar a base do ReactJS, Babel, Webpack e conceitos fund
 - `yarn install` para instalar as dependências;
 - `yarn dev` para desenvolvimento;
 - `yarn build` para produção.
+
+## Espiadinha
+
+<img src="github/githubExplorer.png" alt="Projeto em dispositivo mobile" height="600px"/>
