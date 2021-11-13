@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { RepositoryItem } from "./RepoItem";
 
 import "../styles/repositories.scss";
+//import GithubIcon from "../assets/githubIcon.jpg";
 
 import { IRepository } from "../../types";
 
@@ -15,14 +16,20 @@ export function RepositoryList() {
   }, []);
 
   return (
-    <section className="repository-list">
-      <h1>Lista de repositórios</h1>
+    <>
+      <header>
+        {/* <img src={GithubIcon} alt="Logo Github" /> */}
+        Github Explorer
+      </header>
+      <section className="repository-list">
+        <h1>Lista de repositórios</h1>
 
-      <ul>
-        {repositories.map((repository) => (
-          <RepositoryItem key={repository.id} repository={repository} />
-        ))}
-      </ul>
-    </section>
+        <ul>
+          {repositories.map((repository) => (
+            <RepositoryItem key={repository.id} repository={repository} />
+          ))}
+        </ul>
+      </section>
+    </>
   );
 }
