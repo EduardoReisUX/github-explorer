@@ -25,8 +25,12 @@ export function RepositoryList() {
         <h1>Lista de repositórios</h1>
 
         <ul>
-          {repositories.map((repository) => (
-            <RepositoryItem key={repository.id} repository={repository} />
+          {repositories.map((repository, index) => (
+            <RepositoryItem
+              key={repository.id}
+              repository={repository}
+              style={{ "--order": index }}
+            />
           ))}
         </ul>
       </section>

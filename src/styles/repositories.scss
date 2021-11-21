@@ -15,6 +15,8 @@ header {
 
   line-height: 19px;
   z-index: 999;
+
+  animation: RollIn 0.2s backwards calc(21 * 0.1s);
 }
 
 section.repository-list {
@@ -42,6 +44,7 @@ ul {
     border-radius: 8px;
 
     transition: ease-in-out 0.125s;
+    animation: FadeIn 0.2s ease-in-out backwards calc(var(--order) * 0.1s);
 
     &:hover {
       transform: translateY(-4px);
@@ -63,5 +66,25 @@ ul {
       text-decoration: none;
       color: #0a2cd9;
     }
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    transform: translateY(-4px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes RollIn {
+  from {
+    transform: translateY(-150%);
+  }
+  to {
+    transform: translateY(0);
   }
 }

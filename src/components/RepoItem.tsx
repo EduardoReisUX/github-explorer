@@ -5,11 +5,14 @@ interface RepositoryItemProps {
     html_url: string;
     stargazers_count: number;
   };
+  style: {
+    "--order": number;
+  };
 }
 
-export function RepositoryItem({ repository }: RepositoryItemProps) {
+export function RepositoryItem({ repository, style }: RepositoryItemProps) {
   return (
-    <li>
+    <li style={style as any}>
       <strong>
         {repository?.name ?? "repositório"} 🌟 {repository?.stargazers_count}
       </strong>
