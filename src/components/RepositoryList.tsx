@@ -21,9 +21,9 @@ export function RepositoryList() {
         {/* <img src={GithubIcon} alt="Logo Github" /> */}
         Github Explorer
       </header>
+
       <section className="repository-list">
         <h1>Lista de repositórios</h1>
-
         <ul>
           {repositories.map((repository, index) => (
             <RepositoryItem
